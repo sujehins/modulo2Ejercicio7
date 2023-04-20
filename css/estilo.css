@@ -1,0 +1,95 @@
+body {
+    background-color: rgb(255, 255, 255);
+    color: #0f0f0f;
+    margin: auto;
+    height: auto;
+   }
+/* tabla de productos */ 
+table{
+    border-collapse: collapse;
+    width: auto;
+    margin: auto;
+    align-content: space-between; 
+}
+td,th{
+    border: 1px solid #fbfafdfd;
+    text-align: left;
+    padding: 32px;
+}
+tr:nth-child(even){
+    background-color: rgb(253, 255, 254); 
+}
+.titulo{
+    border: 8px solid #831019dd;
+    text-align: center;
+    padding: 8px;
+}
+p{
+    text-align: center;
+}
+.fornt{
+    text-align: center;
+    font-size: 25pt;
+}
+/* menu */ 
+     ul {
+       list-style-type: none;
+       margin: 0;
+       padding: 0;
+       overflow: hidden;
+       justify-content: center;
+       align-items: center;
+       display: flex;
+       
+   }
+   li {
+       float: left;
+   }
+   li a {
+       display: block;
+       color: white;
+       text-align: center;
+       padding: 14px 16px;
+       text-decoration: none;
+   }
+   /* al momento de pasar el mouse*/ 
+   li a:hover {
+       background-color: rgb(235, 53, 53);
+   }
+  
+    /* el footer al final de la web*/ 
+   footer{
+    text-align: center;
+    background-color: rgba(108, 108, 119, 0.349); 
+   }
+   .row {
+    text-align: center;
+   }
+   /* formulario*/ 
+   .formulario{
+    background-color: rgba(248, 51, 37, 0.493); 
+    border-radius: 10px;
+   }
+   /* ancho y alto imagen*/ 
+    img {
+      max-width: 200px;
+      min-width: 200px;
+      min-height: 200px;
+      max-height: 200px;
+    }
+    
+    /* contacto.html form formulario */ 
+    label{
+        display: inline-block;
+        width: 98px;
+        text-align: 2en;
+        vertical-align: top;
+    }
+    .boton{
+        display: flex;
+        justify-content: center;
+    }
+    .botonp{
+        justify-content: center;
+        align-content: space-between; 
+    }

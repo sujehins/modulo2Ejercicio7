@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Te lo vendo</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <link rel="stylesheet" href="CSS/estilo.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.datatables.net/1.13.4/css/jquery.dataTables.css" />
+    <script src="JS/rs.js"></script>
+</head>
+<body> 
+    <header class="titulo">
+       <h1>Te lo Vendo!</h1> 
+    </header> 
+    <main>
+        <nav class="navbar  navbar-expand-lg  navbar-dark bg-dark">
+          <div class="container-fluid ">
+            <br>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+              <ul class="navbar-nav ">
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="index.html">Inicio</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="estadisticas.html">Productos</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="quienessomos.html">Quienes somos</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="contacto.html">Contacto</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+          <br>
+            <p>Las mejores promocion, precio y calidad de productos electronicos. </p>
+            <p>Donde encontraras un amplia variedad de producto. Poseemos una cantidad ilimitada de productos.</p>
+            <br>
+            <div class="container table-responsive py-5">
+              <h1>Estadísticas</h1>
+              <table id="tabla-estadisticas table table-bordered table-hover">
+                <thead>
+                  <tr>
+                    <th>Imagen y nombre</th>
+                    <th>Descripción</th>
+                    <th>Cantidad Local</th>
+                    <th>Cantidad a Pedir</th>
+                    <th>Disponibilidad</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>
+                      <img src="Imagenes/tv.jpg" alt="Televisión">
+                      Televisión
+                    </td>
+                    <td>Televisión de 42 pulgadas</td>
+                    <td>5</td>
+                    <td><input type="number" min="0" max="5" value="0" onchange="actualizarProducto(this)"></td>
+                    <td>Disponible</td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <img src="Imagenes/celular2.jpg" alt="Teléfono">
+                      Teléfono
+                    </td>
+                    <td>Teléfono móvil Android</td>
+                    <td>7</td>
+                    <td><input type="number" min="0" max="7" value="0" onchange="actualizarProducto(this)"></td>
+                    <td>Disponible</td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <img src="https://http2.mlstatic.com/D_NQ_NP_804774-MLA45259570385_032021-O.jpg" alt="Tablet">
+                      Tablet
+                    </td>
+                    <td>Tablet de 10 pulgadas</td>
+                    <td>3</td>
+                    <td><input type="number" min="0" max="3" value="0" onchange="actualizarProducto(this)"></td>
+                    <td>Disponible</td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTQXGj-eRoWjSqnMf4nJHnjcKmnB2q3FSIJ2g&usqp=CAU" alt="Laptop">
+                      Laptop
+                    </td>
+                    <td>Laptop de 14 pulgadas</td>
+                    <td>2</td>
+                    <td><input type="number" min="0" max="2" value="0" onchange="actualizarProducto(this)"></td>
+                    <td>Disponible</td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <img src="https://http2.mlstatic.com/D_NQ_NP_776442-MLA49040257765_022022-O.jpg" alt="Impresora">
+                      Impresora
+                    </td>
+                    <td>Impresora multifunción</td>
+                    <td>4</td>
+                    <td><input type="number" min="0" max="4" value="0" onchange="actualizarProducto(this)"></td>
+                    <td>Disponible</td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <img src="https://down-cl.img.susercontent.com/file/6775e2c6c47f56705480035c02f1919f" alt="Altavoz">
+                      Altavoz
+                    </td>
+                    <td>Altavoz portátil Bluetooth</td>
+                    <td>6</td>
+                    <td><input type="number" min="0" max="6" value="0" onchange="actualizarProducto(this)"></td>
+                    <td>Disponible</td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <img src="https://clsonyb2c.vtexassets.com/arquivos/ids/208071/ILCE-6400L_1.jpg?v=1757996984" alt="Cámara">
+                      Cámara
+                    </td>
+                    <td>Cámara digital de 20 megapíxeles</td>
+                    <td>10</td>
+                    <td><input type="number" min="0" max="10" value="0" onchange="actualizarProducto(this)"></td>
+                    <td>Disponible</td>
+
+                    </tr>
+                    <tr>
+                      <td>
+                        <img src="https://http2.mlstatic.com/D_NQ_NP_647173-MLC46222014545_052021-O.jpg" alt="Reloj inteligente">
+                        Reloj inteligente
+                      </td>
+                      <td>Reloj inteligente con seguimiento de actividad</td>
+                      <td>1</td>
+                      <td><input type="number" min="0" max="1" value="0" onchange="actualizarProducto(this)"></td>
+                      <td>Disponible</td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <img src="https://snpi.dell.com/snp/images/products/large/es-cl~570-AALK/570-AALKr1.jpg" alt="Mouse">
+                        Mouse
+                      </td>
+                      <td>Mouse inalámbrico para computadora</td>
+                      <td>8</td>
+                      <td><input type="number" min="0" max="8" value="0" onchange="actualizarProducto(this)"></td>
+                      <td>Disponible</td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQRPnQOO_4NuGq_fTOJMLPImZe0FX8Wj2GBQA&usqp=CAU" alt="Teclado">
+                        Teclado
+                      </td>
+                      <td>Teclado inalámbrico para computadora</td>
+                      <td>9</td>
+                      <td><input type="number" min="0" max="9" value="0" onchange="actualizarProducto(this)"></td>
+                      <td>Disponible</td>
+                    </tr>
+                    <tr>
+                      <td></td>
+                      <td><button class="btn btn-primary " onclick="realizarPedido()">Realizar pedido</button></td>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                    </tr>
+                  </tbody>
+                </table>
+            </div>
+           <br>
+        </main> 
+        <footer>
+            <br>
+            <p class="footer">Los Amores Ciegos</p>
+            <p class="footer">Contáctanos en losamoresciegos@gmail.com</p>
+            <p class="footer">Derechos de autor © 2023. Mi sitio web.</p>
+            <br>
+        </footer>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+        <script src="https://cdn.datatables.net/1.13.4/js/jquery.dataTables.js"></script>
+      </body>  
+</html>
